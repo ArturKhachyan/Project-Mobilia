@@ -1,0 +1,10 @@
+.page {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+
+   @include desktop {
+      position: relative;
+      top: 382px;
+   }
+}

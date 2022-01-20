@@ -1,0 +1,74 @@
+// header
+.header {
+   width: 100%;
+   top: 0;
+   z-index: 2;
+   background-color: rgba(255, 255, 255, 1);
+   max-width: 1440px;
+   @include flex;
+   min-height: 70px;
+   padding: 0 29px 0 22px;
+   margin-bottom: 15px;
+   position: fixed;
+
+   &__container {
+      width: 100%;
+      max-height: 70px;
+      margin: 0 auto;
+      padding: 17px 0 12px 0;
+      @include flex;
+      justify-content: space-between;
+
+      .header__menu {
+         margin: 0 0 0 283px;
+
+         .menu__list {
+            @include flex;
+
+            .menu__item {
+
+               &:not(:last-child) {
+                  margin: 0 35px 0 0;
+               }
+
+               .menu__link {
+                  @include subtitle;
+
+                  &:hover {
+                     color: $orange-color;
+                     @include transition;
+                  }
+               }
+            }
+         }
+      }
+
+      .icons__link--menu {
+         margin: 0 0 0 195px;
+
+         .menu__icons--list {
+            @include flex;
+
+            .menu__icons--item {
+
+               &:not(:last-child) {
+                  margin: 0 30px 0 0;
+               }
+
+               .menu__icons--link {
+                  i {
+                     font-size: 26px;
+                     color: $font-color;
+
+                     &:hover {
+                        color: $orange-color;
+                        @include transition;
+                     }
+                  }
+               }
+            }
+         }
+
+      }
+   }
+}

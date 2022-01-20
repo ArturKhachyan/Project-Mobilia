@@ -1,0 +1,94 @@
+@mixin transition {
+   transition: all 0.2s ease-in-out;
+}
+
+@mixin subtitle() {
+   font-size: $fsz;
+   font-weight: 500;
+   font-style: normal;
+   color: $font-color;
+}
+
+@mixin flex() {
+   display: flex;
+   align-items: center;
+}
+
+@mixin for-desktop-up() {
+   @media (max-width: 1440px) {
+      @content;
+   }
+}
+
+@mixin desktop() {
+   @media(max-width: 992px) {
+      @content;
+   }
+}
+
+@mixin littleTabblet() {
+   @media(max-width: 760px) {
+      @content;
+   }
+}
+
+@mixin largMobile() {
+   @media(max-width: 460px) {
+      @content;
+   }
+}
+
+@mixin heroBtn() {
+   width: 100%;
+   height: 100%;
+   background-color: $dark-gray;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   color: $white-color;
+   font-size: $fsz;
+   font-weight: 400;
+   font-style: normal;
+   cursor: pointer;
+}
+
+@mixin arrow() {
+   color: rgba(255, 255, 255, 0.5);
+   max-width: 18px;
+   background: none;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+@mixin headerBlockTitle() {
+   color: $font-color;
+   font-size: 36px;
+   font-weight: 500;
+   font-style: normal;
+}
+
+@mixin shop-image-blocks() {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   max-width: 559px;
+}
+
+@mixin shop__image() {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+@mixin shop__image--img() {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}

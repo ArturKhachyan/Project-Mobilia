@@ -1,0 +1,29 @@
+@import '_reset';
+@import '_variables';
+@import '_mixins';
+@import '_header';
+@import '_hero';
+@import '_main--page';
+@import '_carousel';
+@import '_shop.scss';
+
+.wrapper {
+   height: 100%;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   overflow: scroll;
+
+   .__container {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      background-color: $white-color;
+      height: 100%;
+      width: 100%;
+   }
+}
+

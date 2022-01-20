@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mobilia</title>
+   <!-- main css link -->
+   <link rel="stylesheet" href="styles/main.css">
+   <!-- node_modules link -->
+   <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+   <!-- cdn js link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700" rel="stylesheet" />
+   <!-- fontawesome link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="__container">
+         <!-- header -->
+         <div class="header">
+            <div class="header__container">
+               <div class="logo">
+                  <img src="./images/logo/Mobilia.svg" alt="">
+               </div>
+               <nav class="header__menu menu">
+                  <ul class="menu__list">
+                     <li class="menu__item"><a class="menu__link" href="#About">About</a></li>
+                     <li class="menu__item"><a class="menu__link" href="#Shop">Shop</a></li>
+                     <li class="menu__item"><a class="menu__link" href="#Services">Services</a></li>
+                     <li class="menu__item"><a class="menu__link" href="#Designers">Designers</a></li>
+                     <li class="menu__item"><a class="menu__link" href="#Sale">Sale</a></li>
+                     <li class="menu__item"><a class="menu__link" href="#Contacts">Contacts</a></li>
+                  </ul>
+               </nav>
+               <nav class="icons__link--menu">
+                  <ul class="menu__icons--list">
+                     <li class="menu__icons--item">
+                        <a href="#" class="menu__icons--link">
+                           <img class="icon" src="./images/icons/search.svg" alt="">
+                        </a>
+                     </li>
+                     <li class="menu__icons--item">
+                        <a href="#" class="menu__icons--link">
+                           <img class="icon__image" src="./images/icons/heart.svg" alt="">
+                        </a>
+                     </li>
+                     <li class="menu__icons--item">
+                        <a href="#" class="menu__icons--link">
+                           <i class="fas fa-shopping-cart"></i>
+                        </a>
+                     </li>
+                     <li class="menu__icons--item">
+                        <a href="#" class="menu__icons--link">
+                           <i class="far fa-user-circle"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+         <!-- main page -->
+         <main class="page">
+            <section class="page__hero hero">
+               <div class="hero__container">
+                  <div class="hero__container--content">
+                     <div class="content__container">
+                        <h2 class="content__container--title">Designed for your comfort</h2>
+                        <p class="content__container--subtitle">Comfort starts and ends at our furniture</p>
+                        <div class="content__container--btn btn">
+                           <input type="submit" class="button" value="Shop now">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="hero__container--image image">
+                     <div class="image__block">
+                        <img src="./images/hero_images/hero bg.jpg" class="image__block--img" alt="">
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="page__shope shop">
+               <div class="shope__container">
+                  <div class="shop__container--content content">
+                     <div class="content__header header--block">
+                        <h2 class="header--block__title">Shop by categories</h2>
+                     </div>
+                     <div class="shop__body">
+                        <div class="shop__body--left">
+                           <div class="left__block--top">
+                              <div class="image__block img">
+                                 <img src="./images/shop/leftTop.jpg" class="shop__image" alt="shop__image">
+                              </div>
+                           </div>
+                           <div class="left__block--bottom">
+                              <div class="image__block img">
+                                 <img src="./images/shop/leftBottom.jpg" class="shop__image" alt="shop__image">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="shop__body--right">
+                           <div class="right__block--top">
+                              <div class="image__block img">
+                                 <img src="./images/shop/rightTop.jpg" class="shop__image" alt="shop__image">
+                              </div>
+                           </div>
+                           <div class="right__block--bottom">
+                              <div class="image__block img">
+                                 <img src="./images/shop/rightBottom.jpg" class="shop__image" alt="shop__image">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="page_carousel carousel">
+               <div class="glide">
+                  <button class="arrow" id="back">back</button>
+                  <div class="glide__track" data-glide-el="track">
+                     <ul class="glide__slides">
+                        <li class="glide__slide">
+                           <img src="images/carousel_images/girl.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                           <img src="images/carousel_images/girl.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                           <img src="images/carousel_images/girl.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                           <img src="images/carousel_images/girl.jpg" alt="">
+                        </li>
+                     </ul>
+                  </div>
+                  <button class="arrow" id="next">
+                     <img class="arrow__icon" src="./images/icons/rightArrow.svg" alt="">
+                  </button>
+               </div>
+            </section>
+         </main>
+         <!-- <footer class="footer__container">
+            <div class="footer__top"></div>
+            <div class="footer__bottom"></div>
+         </footer> -->
+      </div>
+   </div>
+
+   <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+   <!-- glide__carousel js -->
+   <script src="/src/js/glide__carousel.js"></script>
+   <!-- main js -->
+   <script src="/src/js/main.js"></script>
+</body>
+
+</html>
